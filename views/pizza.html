@@ -14,48 +14,52 @@
       -box-sizing: border-box;
       }
 
-  body {
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    background: black;
-  }
+    body {
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+      background: black;
+    }
 
-  input {
-    background: grey;
-    font-size: 18px;
-  }
+    input {
+      background: grey;
+      font-size: 18px;
+    }
 
-  form {
-    display: inline-block;
-  }
+    form {
+      display: inline-block;
+    }
 
-  .centered {
-    text-align: center;
-  }
+    .centered {
+      text-align: center;
+    }
 
-  #pizzaSize {
-    font-weight: 800;
-  }
+    #pizzaSize {
+      font-weight: 800;
+    }
 
-  .mover {
-    position: fixed;
-    width: 256px;
-    z-index: -1;
-  }
+    .mover {
+      position: fixed;
+      width: 256px;
+      z-index: -1;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
 
-  .randomPizzaContainer {
-    float: left;
-    display: flex;
-  }
+    .randomPizzaContainer {
+      float: left;
+      display: flex;
+    }
 
-  .randomPizzaContainer:after {
-    content: "";
-    display: table;
-    clear:both;
-  }
+    .randomPizzaContainer:after {
+      content: "";
+      display: table;
+      clear:both;
+    }
 
-   .container {
-    background-color: rgba(240, 60, 60, 0.8);
-  }
+     .container {
+      background-color: rgba(240, 60, 60, 0.8);
+    }
   </style>
 
   <!-- <link rel="stylesheet" href="css/bootstrap-grid.css"> -->
@@ -63,44 +67,44 @@
   <style>
   img {
   vertical-align: middle;
-}
-.img-responsive {
-  display: block;
-  width: 100% \9;
-  max-width: 100%;
-  height: auto;
-}
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
   }
-}
-@media (min-width: 992px) {
+  .img-responsive {
+    display: block;
+    width: 100% \9;
+    max-width: 100%;
+    height: auto;
+  }
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media (min-width: 768px) {
+    .container {
+    width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
   .container {
     width: 970px;
+    }
   }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
+  @media (min-width: 1200px) {
+   .container {
+      width: 1170px;
+    }
   }
-}
-.row {
-  margin-left: -15px;
-  margin-right: -15px;
-} .col-md-4, .col-md-6, .col-md-8, .col-md-12{
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 992px) { .col-md-4, .col-md-6, .col-md-8, .col-md-12 {
+  .row {
+    margin-left: -15px;
+    margin-right: -15px;
+  } .col-md-4, .col-md-6, .col-md-8, .col-md-12{
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media (min-width: 992px) { .col-md-4, .col-md-6, .col-md-8, .col-md-12 {
     float: left;
   }
   .col-md-12 {
@@ -121,18 +125,18 @@
   .col-md-push-2 {
     left: 16.66666667%;
   }
-}
-.container:before,
-.container:after,
-.row:before,
-.row:after {
-  content: " ";
-  display: table;
-}
-.container:after,
-.row:after {
-  clear: both;
-}
+    }
+    .container:before,
+    .container:after,
+    .row:before,
+    .row:after {
+      content: " ";
+      display: table;
+    }
+    .container:after,
+    .row:after {
+      clear: both;
+    }
   </style>
 </head>
 
