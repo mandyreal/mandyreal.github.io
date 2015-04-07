@@ -82,8 +82,6 @@ $(function() {
             menuIcon.trigger('click');
             expect($('body').hasClass('menu-hidden')).toBeTruthy();
         });
-
-
     });
 
     /* TODO: Write a new test suite named "Initial Entries" */
@@ -125,9 +123,10 @@ $(function() {
             done();
         });
 
+        /*Return to the new feed */
         afterEach(function(done) {
             loadFeed(1, done);
         }); 
-
     });
+
 }());

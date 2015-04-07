@@ -2,11 +2,12 @@
 
 Using [Jasmine](http://jasmine.github.io/), complete the test suite needed to test the web app which reads RSS feeds.
 
-
 ## How to run the tests
 
 1. Open index.html in the browser
 2. Run the tests, all should be successful 
+
+Web app with Jasmine test suite here :  http://mandyreal.github.io/feedreader/
 
 ## References / Resources :
 
