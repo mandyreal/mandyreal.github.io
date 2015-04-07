@@ -21,7 +21,7 @@ $(function() {
          * allFeeds in app.js to be an empty array and refresh the
          * page?
          */
-        it('are defined', function() {
+        it('allFeeds variable is defined and not an empty array', function() {
             expect(allFeeds).toBeDefined();
             expect(allFeeds.length).not.toBe(0);
         });
@@ -31,26 +31,30 @@ $(function() {
          * in the allFeeds object and ensures it has a URL defined
          * and that the URL is not empty.
          */
-        it('each feed has URL and is not empty', function() {
+        it('each feed item has URL and is not empty string', function() {
             for (var i = 0; i < allFeeds.length; i ++) {
                 expect(allFeeds[i].url).toBeDefined();
                 expect(allFeeds[i].url.length).not.toBe(0);
             }
         });
  
-
-
         /* TODO: Write a test that loops through each feed
          * in the allFeeds object and ensures it has a name defined
          * and that the name is not empty.
          */
-        it('each feed has name and is not empty', function() {
+        it('each feed item has a name and is not empty string', function() {
             for (var i = 0; i < allFeeds.length; i ++) {
                 expect(allFeeds[i].name).toBeDefined();
                 expect(allFeeds[i].name.length).not.toBe(0);
             }
         });
 
+        /* Additional test to check for valid URL */
+        it('each URL item is prefixed with http', function() {
+            for (var i = 0; i < allFeeds.length; i ++) {
+                expect(allFeeds[i].url.substring(0,4)).toEqual('http');
+            }
+        });    
     });
 
 
@@ -73,7 +77,7 @@ $(function() {
           * should have two expectations: does the menu display when
           * clicked and does it hide when clicked again.
           */
-        it('is displayed when clicked, hidden on 2nd click', function() {
+        it('is displayed when clicked, then hidden on 2nd click', function() {
             /* Trigger 1st click to display Menu as it's hidden by default */
             menuIcon.trigger('click');
             expect($('body').hasClass('menu-hidden')).not.toBeTruthy();
@@ -111,22 +115,16 @@ $(function() {
          * Remember, loadFeed() is asynchronous.
          */
 
-        /* Store title of first feed for later comparison */ 
+        /* Store feed header title of first feed for later comparison */ 
         beforeEach(function(done) {
-            feedTitle = $('.feed').find('h2').text();
+            feedTitle = $('.header').find('h1').text();
             loadFeed(1, done);
         });
 
-        /* Verify if new feed is loaded by comparing current feed title with previous*/ 
+        /* Verify that new feed is loaded by comparing current feed title with previous*/ 
         it('new feed has been loaded',function(done) {
-            expect($('.feed').find('h2').text()).not.toBe(feedTitle);
+            expect($('.header').find('h1').text()).not.toBe(feedTitle);
             done();
         });
-
-        /*Return to the new feed */
-        afterEach(function(done) {
-            loadFeed(1, done);
-        }); 
     });
-
 }());
