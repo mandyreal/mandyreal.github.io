@@ -1,7 +1,7 @@
 # fedn-project5
 # FEDN Project 5 - Neighborhood Map
 
-Web App here :  http://mandyreal.github.io/build/
+Web App here :  http://mandyreal.github.io/p5/
 
 Project Goal: Develop a single page application featuring a map of your neighborhood or a neighborhood you would like to visit. Then add additional functionality to this map including highlighted locations, third-party data about those locations and various ways to browse the content.
 
