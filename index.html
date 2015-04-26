@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mandy Real - FrontEnd Developer</title>
+    <title>Mandy Real &bull; FrontEnd Developer</title>
     <link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
@@ -16,6 +16,14 @@
 
       a {
         color: #333;
+      }
+
+      h4 a:hover {
+        background-color: orange; 
+      }
+
+      h3 a:hover {
+        background-color: orange; 
       }
 
       hr {
@@ -38,7 +46,6 @@
         margin-top: 20px;
       }
 
-
       .title-super  {
         font-size: 60px;
         margin-top: 50px;
@@ -52,11 +59,12 @@
         width: 100%;
       }
 
-      .featured img:hover {
+      .featured  img:hover {
         opacity: 1;
         transform: scale(1.0);
         transition-property: all;
         transition-duration: 0.6s;
+        border: 1px solid orange;
       }
 
       @media (max-width: 991px) {
@@ -87,53 +95,56 @@
         <div class="col-md-6 text-right">
           <h1 class="text-thin title-super">MANDY REAL</h1>
           <h3>FRONT-END DEVELOPER</h3>
-          <h4>normandy.real@gmail.com</h4>
+          <h4>normandy.real@gmail.com / <a href="https://github.com/mandyreal"> github.com/mandyreal</a></h4>
         </div>
       </div>
+
       <div class="row">
         <div class="col-md-12">
           <hr>
         </div>
       </div>      
+
       <div class="row">
         <div class="col-md-12">
-          <img class="img-responsive" src="images/my-main.png" alt="Main Picture">
+          <img class="img-responsive" src="images/my-main-med.png" alt="Main Picture">
         </div>
       </div>      
-      <div class="row">
+
+      <div class="row text-center">
         <div class="col-md-12">
           <h2 class="text-thin">Udacity Nanodegree Projects</h2>
         </div>
       </div>      
+
       <div class="row text-center">
         <div class="col-md-4">
           <div class="featured">
-            <img class="img-responsive" src="images/pic1.jpg" alt="Project 2">
+            <img class="img-responsive" src="images/P2SShot.png" alt="Project 2">
             <h3><a href="http://mandyreal.github.io/p2/">Interactive Resume</a></h3>
             <p>Using Javascript and jQuery, resume contents are read form a JSON file then displayed dynamically using a template</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="featured">
-            <img class="img-responsive" src="images/pic2.jpg" alt="Project 3">
-            <h3><a href="http://mandyreal.github.io/p3/">Frogger Arcade Game Clone</a></h3>
+            <img class="img-responsive" src="images/P3SShot.png" alt="Project 3">
+            <h3><a href="http://mandyreal.github.io/p3/">Arcade Game Frogger Clone</a></h3>
             <p>Using HTML 5 Canvas and OOP features of Javascript, define game entities like player(s) and enemies to recreate the classig game Frogger</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="featured">
-            <img class="img-responsive" src="images/pic3.jpg" alt="Project 4">
+            <img class="img-responsive" src="images/P4SShot.png" alt="Project 4">
             <h3><a href="http://mandyreal.github.io/p4/">Website Optimization</a></h3>
-            <p>Address optimization and performance of a given website to achive a target PageSpeed score of over 90 and runs at 60fps</p>
+            <p>Address optimization and performance-related issues of a given website to achive a target PageSpeed score of over 90 and runs at 60fps</p>
           </div>
         </div>
       </div>
-
+      <br><br>
       <div class="row text-center">
-
         <div class="col-md-4">
           <div class="featured">
-            <img class="img-responsive" src="images/pic4.jpg" alt="Project 5">
+            <img class="img-responsive" src="images/P5SShot.png" alt="Project 5">
             <h3><a href="http://mandyreal.github.io/p5/">Neighborhood Map</a></h3>
             <p>Using AJAX and Knockout.js, implement a single page web app that displays a neighborhood & popular places. Added functionality involves access to Foursqare API to display mapmarkers</p>
           </div>
@@ -142,14 +153,12 @@
         </div>
         <div class="col-md-4">
           <div class="featured">
-            <img class="img-responsive" src="images/pic4.jpg" alt="Project 6">
+            <img class="img-responsive" src="images/P6SShot.png" alt="Project 6">
             <h3><a href="http://mandyreal.github.io/p6/">Feed Reader Testing</a></h3>
-            <p>Using Jasmine, test a web app that reads RSS feeds</p>
+            <p>Test a web app that reads RSS feeds using Jasmine</p>
           </div>
-        </div>
-      
+        </div>   
       </div>
-
     </div>
   </body>
 </html>

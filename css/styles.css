@@ -33,6 +33,8 @@ hr {
 	margin-top: 50px;
 }
 
+.imageAndText {position: relative;} 
+.imageAndText .col {position: absolute; z-index: 1; top: 0; left: 0;}
 .featured img {
   border-radius: 5px;
   display: block;
@@ -41,7 +43,7 @@ hr {
   width: 100%;
 }
 
-.featured img:hover ~ h3:hover {
+.featured img:hover {
   opacity: 1;
   transform: scale(1.0);
   transition-property: all;
