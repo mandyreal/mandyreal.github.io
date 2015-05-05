@@ -28,4 +28,4 @@ Using AJAX and Knockout.js, implement a single page web app that displays a neig
 Test a web app that reads RSS feeds using Jasmine
 
 
-[dacity's Frontend Developer Nanodegree Program]:https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001
+[Udacity's Frontend Developer Nanodegree Program]:https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001
