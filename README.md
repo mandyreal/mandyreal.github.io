@@ -3,7 +3,9 @@
 # The following projects were developed to fulfill the requirements for [Udacity's Frontend Developer Nanodegree Program]
 
 
-## Project 1 - this site, porfolio site based on a given design mockup
+## Project 1 - Portfolio Site 
+
+Using Bootstrap, create a responsive porfolio website based on a given design mockup using 
 
 ## Project 2 - Interactive Resume
 
@@ -11,7 +13,7 @@ Using Javascript and jQuery, resume contents are read form a JSON file then disp
 
 ## Project 3 - Arcade Game Frogger Clone
 
-## Using HTML 5 Canvas and OOP features of Javascript, define game entities like player(s) and enemies to recreate the classig game Frogger
+Using HTML 5 Canvas and OOP features of Javascript, define game entities like player(s) and enemies to recreate the classig game Frogger
 
 ## Project 4 - Website Optimization
 
