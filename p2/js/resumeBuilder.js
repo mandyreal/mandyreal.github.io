@@ -59,11 +59,18 @@ var bio = {
 var work = {
     "jobs"  : [
         {
-            "employer"    : "NCS",
-            "title"       : "Database Administrator",
+            "employer"    : "NCS Pte Ltd",
+            "title"       : "Database Administrator/Senior Application Consultant",
             "location"    : "Singapore",
-            "dates"       : "2005-Present",
+            "dates"       : "2007-Present",
             "description" : "SQL Server, DB2 database administration for mainframe and .NET applications for local government agencies"            
+        },
+        {
+            "employer"    : "A-IT Software Services Pte Ltd",
+            "title"       : "IT Consultant",
+            "location"    : "Singapore",
+            "dates"       : "2005-2007",
+            "description" : "Developed and supported enhancements for mainframe banking applications for Citibank EU branches"
         },
         {
             "employer"    : "Accenture Inc.",
@@ -71,6 +78,13 @@ var work = {
             "location"    : "Manila, Philippines",
             "dates"       : "2001-2005",
             "description" : "Application development and maintenance of mainframe systems for leading US credit card company"
+        },
+        {
+            "employer"    : "Systematics Technology Services, Inc.",
+            "title"       : "Analyst Programmer",
+            "location"    : "Manila, Philippines",
+            "dates"       : "1997-2001",
+            "description" : "Developed in-house mainframe applications for local ATM systems"
         }
     ],
     display: function() {
@@ -169,21 +183,22 @@ var education = {
         {
             "title" : "Frontend Web Developer Nanodegree",
             "school" : "Udacity",
-            "dates"  : "October 2014 - Presemt",
+            "dates"  : "October 2014 - April 2015",
             "url"    : "https://www.udacity.com/course/nd001"
-        },
-        {
-            "title"  : "Startup Engineering",
-            "school" : "Coursera",
-            "dates"  : "June 2013",
-            "url"    : "https://class.coursera.org/startup-001"
         },
         {
             "title"  : "Programming Mobile Applications for Andoid",
             "school" : "Coursera",
             "dates"  : "January 2014",
             "url"    : "https://www.coursera.org/course/android"
+        },
+        {
+            "title"  : "Startup Engineering",
+            "school" : "Coursera",
+            "dates"  : "June 2013",
+            "url"    : "https://class.coursera.org/startup-001"
         }
+
     ],
     display: function() {
       for(school in education.schools) {
